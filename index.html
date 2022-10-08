@@ -9,11 +9,30 @@
 </head>
 <body>
     <section>
+        <div class="shadow"></div>
         <div class="ball">
             <div class="division"></div>
             <div class="inferior"></div>
             <div class="centro"></div>
         </div>
     </section>
+    <div class="containerPokemon">
+        <img src="img/jigglypuff_asset.png" alt="">
+    </div>
+    <script>
+         centro = document.querySelector('.centro');
+         
+        function repeatingFunc() {
+            if(centro.style.background == "white"){
+                centro.style.background = "red"
+            }else{
+                centro.style.background = "white";
+            }
+            setTimeout(repeatingFunc, 300);
+        }
+
+        setTimeout(repeatingFunc(),300);
+
+    </script>
 </body>
 </html>
